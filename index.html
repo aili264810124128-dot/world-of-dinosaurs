@@ -1,9 +1,19 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>The World of Dinosaurs</title>
 
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7RZYPQ57DW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7RZYPQ57DW');
+    </script>
+
+    <!-- p5.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="sketch.js"></script>
 
@@ -65,9 +75,7 @@
             padding: 20px;
             margin: 30px;
         }
-
     </style>
-
 </head>
 
 <body>
@@ -81,9 +89,9 @@
         <h2>What is Paleontology?</h2>
 
         <p>
-        Paleontology is the study of ancient life through fossils.
-        Paleontologists study fossils to learn about animals,
-        plants and other organisms that lived millions of years ago.
+            Paleontology is the study of ancient life through fossils.
+            Paleontologists study fossils to learn about animals,
+            plants and other organisms that lived millions of years ago.
         </p>
 
         <h2>Discover the Dinosaurs</h2>
@@ -97,9 +105,9 @@
                 <img src="trex.jpeg">
 
                 <p>
-                The Tyrannosaurus Rex, also known as T. rex,
-                was a large meat-eating dinosaur. It lived during
-                the Late Cretaceous period.
+                    The Tyrannosaurus Rex, also known as T. rex,
+                    was a large meat-eating dinosaur. It lived during
+                    the Late Cretaceous period.
                 </p>
 
                 <h2>Triceratops</h2>
@@ -107,9 +115,9 @@
                 <img src="triceratops.jpeg">
 
                 <p>
-                Triceratops was a plant-eating dinosaur.
-                It had three horns on its face and a large
-                bony frill around its head.
+                    Triceratops was a plant-eating dinosaur.
+                    It had three horns on its face and a large
+                    bony frill around its head.
                 </p>
 
             </div>
@@ -121,9 +129,9 @@
                 <img src="stegosaurus.jpeg">
 
                 <p>
-                Stegosaurus was known for the large plates
-                along its back and the spikes on its tail.
-                It was a plant-eating dinosaur.
+                    Stegosaurus was known for the large plates
+                    along its back and the spikes on its tail.
+                    It was a plant-eating dinosaur.
                 </p>
 
                 <h2>Velociraptor</h2>
@@ -131,8 +139,8 @@
                 <img src="velociraptor.jpeg">
 
                 <p>
-                Velociraptor was a smaller meat-eating dinosaur.
-                It was known for its sharp claws and feathers.
+                    Velociraptor was a smaller meat-eating dinosaur.
+                    It was known for its sharp claws and feathers.
                 </p>
 
             </div>
@@ -140,7 +148,6 @@
         </div>
 
     </div>
-
 
     <!-- WIDGET 1: RANDOM DINOSAUR FACTS -->
 
@@ -153,7 +160,6 @@
         <button onclick="showFact()">Show Me a Fact!</button>
 
     </div>
-
 
     <!-- WIDGET 2: DINOSAUR QUIZ -->
 
@@ -173,31 +179,28 @@
 
     </div>
 
-
     <!-- LINK TO SECOND WEBPAGE -->
 
     <h2>Want to Discover More?</h2>
 
     <p>
-    Explore our second page for more interesting
-    dinosaur facts and discoveries!
+        Explore our second page for more interesting
+        dinosaur facts and discoveries!
     </p>
 
     <a href="facts.html">Visit Dinosaur Discoveries</a>
-
 
     <!-- EXTERNAL LINK -->
 
     <h2>Learn More About Paleontology</h2>
 
     <p>
-    Want to learn more about fossils and paleontology?
-    Visit the
-    <a href="https://www.priweb.org/" target="_blank">
-        Paleontological Research Institution
-    </a>.
+        Want to learn more about fossils and paleontology?
+        Visit the
+        <a href="https://www.priweb.org/" target="_blank">
+            Paleontological Research Institution
+        </a>.
     </p>
-
 
     <!-- JAVASCRIPT FOR THE WIDGETS -->
 
@@ -218,7 +221,6 @@
             document.getElementById("fact").innerHTML = facts[randomNumber];
 
         }
-
 
         function checkAnswer(choice) {
 
